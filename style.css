@@ -1,0 +1,116 @@
+body {
+    font-family: 'Blinker', sans-serif;
+    font-size:20px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: row;
+    line-height: 40px;
+}
+
+.logo {
+    display: flex;
+    background-color: grey;
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.logo a {
+    font-size: 20px;
+    color: khaki;
+    font-weight: bold;
+}
+
+.logo a:hover {
+    font-size: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    background-color: khaki;
+}
+
+.menu a {
+    color: grey;
+}
+
+.menu a:hover{
+    color: orange;
+}
+
+.menu p {
+    padding: 2px 15px;
+}
+
+.container-banner {
+    background-image: url("adocao2.jpeg");
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#container-home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-sobre{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.pet {
+    width: 500px;
+    height: auto;
+}
+
+.texto {
+    padding: 20px;
+    flex: 2;
+}
+
+.bg-esquerda {
+    background-image: linear-gradient(to right, khaki, white);
+}
+
+.bg-direita {
+    background-image: linear-gradient(to left, khaki, white);
+}
+
+#contanto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contato a {
+    color: gray;
+}
+
+footer{
+    background-color: grey;
+    color:khaki;
+    direction: rtl;
+    padding: 3px;
+}
+
+@media (max-width: 700px) {
+    .logo {
+        display: none;
+    }
+
+    .menu {
+        flex-direction: column;
+        width:100%;
+    }
+}
